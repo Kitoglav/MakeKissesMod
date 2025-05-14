@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "makekisses",
+  "version": "${version}",
+  "name": "Make Kisses",
+  "description": "Just a mod for my gf lol",
+  "authors": ["Kitoglav"],
+  "license": "Apache-2.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.macaronsteam.makekisses.MakeKissesMod"
+    ],
+    "client": [
+      "com.macaronsteam.makekisses.MakeKissesModClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric-api": "*",
+    "fabric-lifecycle-events-v1": "*",
+    "fabric-key-binding-api-v1": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
