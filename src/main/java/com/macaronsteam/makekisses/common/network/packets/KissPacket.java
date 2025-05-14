@@ -42,7 +42,7 @@ public record KissPacket(int entityId) implements CustomPacketPayload {
                         return;
                     }
                     Entity entity = level.getEntity(this.entityId);
-                    if (entity instanceof LivingEntity target && target.closerThan(player, player.entityInteractionRange())) {
+                    if (entity instanceof Player target && target.closerThan(player, player.entityInteractionRange())) {
                         MakeKissesMod.KISS_SOUND.ifPresent(soundEvent -> level.playSound(null, target, soundEvent, SoundSource.PLAYERS, 1f, 1f));
                         Vec3 pos = target.position();
                         Random random = ThreadLocalRandom.current();
